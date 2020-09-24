@@ -2,8 +2,8 @@
 const express = require("express")
 const path = require("path")
 const fs = require("fs")
-const htmlRoutes = require("./routes/htmlRoutes")
-const apiRoutes = require("./routes/apiRoutes")
+const htmlRoutes = require("./Develop/routes/htmlRoutes")
+const apiRoutes = require("./Develop/routes/apiRoutes")
 // using express and opening a port to run server
 const app = express()
 const PORT = process.env.PORT || 3000
