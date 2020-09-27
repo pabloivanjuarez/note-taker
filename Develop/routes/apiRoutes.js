@@ -7,7 +7,6 @@ const {
 router.get("/getNotes", function (req, res) {
   let data = fs.readFileSync("develop/db/db.json", "utf-8");
   data = JSON.parse(data)
-  console.log(data);
   res.json(data)
 });
 
