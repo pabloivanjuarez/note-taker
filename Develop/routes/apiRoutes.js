@@ -6,7 +6,7 @@ const {
 } = require("uuid")
 
 router.get("/getNotes", function (req, res) {
-  let data = fs.readFileSync("develop/db/db.json", "utf-8");
+  let data = fs.readFileSync("Develop/db/db.json", "utf-8");
   data = JSON.parse(data)
   res.json(data)
 });
@@ -18,16 +18,16 @@ router.post("/getNotes", function (req, res) {
     title: req.body.title,
     text: req.body.text
   }
-  let data = fs.readFileSync("develop/db/db.json", "utf-8");
+  let data = fs.readFileSync("Develop/db/db.json", "utf-8");
   data = JSON.parse(data)
   data.push(postData)
-  fs.writeFileSync("develop/db/db.json", JSON.stringify(data))
+  fs.writeFileSync("Develop/db/db.json", JSON.stringify(data))
   res.json(data)
 });
 
 router.delete("/getNotes/:id", function (req, res) {
   let noteID = req.params.id;
-  let data = fs.readFileSync("develop/db/db.json", "utf-8");
+  let data = fs.readFileSync("Develop/db/db.json", "utf-8");
   data = JSON.parse(data)
   console.log("here");
   for (let i = 0; i < data.length; i++) {
@@ -37,7 +37,7 @@ router.delete("/getNotes/:id", function (req, res) {
     }
   }
   fs.writeFile(
-    "develop/db/db.json",
+    "Develop/db/db.json",
     JSON.stringify(data),
     "utf8",
     (err) => {
