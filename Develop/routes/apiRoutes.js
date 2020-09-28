@@ -1,5 +1,6 @@
 const fs = require("fs");
 const router = require("express").Router()
+
 const {
   v4: uuidv4
 } = require("uuid")
@@ -21,15 +22,38 @@ router.post("/getNotes", function (req, res) {
   data = JSON.parse(data)
   data.push(postData)
   fs.writeFileSync("develop/db/db.json", JSON.stringify(data))
+  res.json(data)
 });
 
-router.delete("/getNotes", function (req, res) {
-  notesData = notesData.filter(note => {
-    if (note.id == req.params.id) {
-      return false;
+router.delete("/getNotes/:id", function (req, res) {
+  let noteID = req.params.id;
+  let data = fs.readFileSync("develop/db/db.json", "utf-8");
+  data = JSON.parse(data)
+  console.log("here");
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].id === noteID) {
+      data.splice(i, 1);
+      break;
     }
-    return true;
-  })
-})
+  }
+  fs.writeFile(
+    "develop/db/db.json",
+    JSON.stringify(data),
+    "utf8",
+    (err) => {
+      if (err) throw err;
+      res.send("Deleted Note");
+    }
+  );
+});
+
+
+// notesData = notesData.filter(note => {
+//   if (note.id == req.params.id) {
+//     return false;
+//   }
+//   return true;
+// })
+// })
 
 module.exports = router
