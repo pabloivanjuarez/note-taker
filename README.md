@@ -1,8 +1,9 @@
 
   # note-taker
-  ![License Badge](https://img.shields.io/badge/License-MIT-blue) ![JS Badge](https://img.shields.io/badge/JavaScript-  63.4%25-yellow)
-  ![License Badge](https://img.shields.io/badge/License-MIT-blue) ![HTML Badge](https://img.shields.io/badge/JavaScript-100%25-green)
-  ![License Badge](https://img.shields.io/badge/License-MIT-blue) ![CSS Badge](https://img.shields.io/badge/JavaScript-100%25-green)
+![License Badge](https://img.shields.io/badge/License-MIT-blue)
+![JS Badge](https://img.shields.io/badge/JavaScript-63.4%25-yellow)
+![HTML Badge](https://img.shields.io/badge/JavaScript-100%25-green)
+![CSS Badge](https://img.shields.io/badge/JavaScript-100%25-green)
   
   ## Description
 
