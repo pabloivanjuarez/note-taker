@@ -33,7 +33,12 @@
 ---
   ## Usage
  
-  Space created for your Text
+ #### Start the app:
+ ![exmp1](https://media.giphy.com/media/HPbCHoz799ELM0UTki/giphy.gif)
+ #### Finish note:
+ ![exmp2](https://media.giphy.com/media/bCtCLgdWx1CPI565UO/giphy.gif)
+ #### Delete note, if desired:
+ ![exmp3](https://media.giphy.com/media/7NxiA0xZ17TJBW7yEt/giphy.gif)
 
 
 ---  
