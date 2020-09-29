@@ -3,7 +3,7 @@
 ![License Badge](https://img.shields.io/badge/License-MIT-blue)
 ![JS Badge](https://img.shields.io/badge/JavaScript-63.4%25-yellow)
 ![HTML Badge](https://img.shields.io/badge/HTML-25.4%25-red)
-![CSS Badge](https://img.shields.io/badge/CSS-11.2%25-green)
+![CSS Badge](https://img.shields.io/badge/CSS-11.2%25-purple)
   
   ## Description
 
